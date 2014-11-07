@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weeklist_item_background"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tvDate"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:contentDescription="@string/weather_image_desc"
+        android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+
+    <TextView
+        android:id="@+id/tvTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tvTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTempMin"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tvCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDate"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvCond"
+        android:paddingRight="5dp" />
+
+</RelativeLayout>

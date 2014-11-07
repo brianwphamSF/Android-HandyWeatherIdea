@@ -1,0 +1,10 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/drawerStyle"
+    android:choiceMode="singleChoice"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:dividerHeight="0.1dp"
+    tools:context="com.brian.weather.handyweatheridea.fragments.navdrawer.NavigationDrawerFragment" />
